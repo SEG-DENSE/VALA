@@ -102,7 +102,9 @@ The output XML files are in the folder specified by '-o', here is an example rep
 </PerformanceData>
 ```
 Here the datas in 'PatternData' represents all the execution paths traversed in the data-flow analysis of VALA, and all possibile resource utilization operation sequences summarised for these executions paths; they are sorted by their activities, the target member fields and the target entrypoints in turn.
+
 Here each 'ErrorUsage' represents a resource utilization bug revealed by VALA, and 'violatedPattern' here means the variant lifecycle it occurs in, 'field' means the member field the resource is stored in, and 'oplist' gives a short view of the harmful operation usages.
+
 Next the 'PerformanceData' gives the detailed information of time (by second) and memory (by MB) used by VALA on this app. To note, the time of 'TotalRuntimeSeconds' is the total used in the analysis, while 'CallgraphConstructionSeconds' represents the CFG construction time used to support the analysis of VALA, and their distance represents the time used in the analysis of VALA.
 
 
