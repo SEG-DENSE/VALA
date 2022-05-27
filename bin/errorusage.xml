@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errorUsages>
+	<pattern title="Skip1">
+		<rule id="1">
+			<condition entrypoint="onCreate" value="(REQUIRE)+=>(RELEASE)-"/>
+			<condition entrypoint="onCreate" value="(FINISH)+"/>
+			<condition entrypoint="onStop" value="(RELEASE)+"/>
+		</rule>
+		<rule id="2">
+			<condition entrypoint="onCreate" value="(ADD)+=>(RELEASE)-"/>
+			<condition entrypoint="onCreate" value="(FINISH)+"/>
+			<condition entrypoint="onStop" value="(RELEASE)+"/>
+		</rule>
+	</pattern>
+	<pattern title="Skip2">
+		<rule id="1">
+			<condition entrypoint="onCreateView" value="(REQUIRE)+=>(RELEASE)-"/>
+			<condition entrypoint="onDestroy" value="(RELEASE)+"/>
+			<condition entrypoint="onDestroyView" value="(RELEASE)-"/>
+		</rule>
+		<rule id="2">
+			<condition entrypoint="onCreateView" value="(ADD)+=>(RELEASE)-"/>
+			<condition entrypoint="onDestroy" value="(RELEASE)+"/>
+			<condition entrypoint="onDestroyView" value="(RELEASE)-"/>
+		</rule>
+	</pattern>
+	<pattern title="Swap">
+		<rule id="1">
+			<condition entrypoint="onSaveInstanceState" value="(SAVE)+"/>
+			<condition entrypoint="onStop" value="(EDIT)+"/>
+		</rule>
+	</pattern>
+<!---
+<notes>
+	<note (....) represents a condition to be satisfied in entrypoint onCreate() or onDestroy() />
+	<note  => represents their execution order while + means once or more, - means never/>
+	<note each rule is optional while all conditions inside a rule are mandatory />
+</notes>
+-->
+</errorUsages>

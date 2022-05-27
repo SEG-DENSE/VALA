@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ResourceOperations>
+ <Pattern_1/>
+ <operation opType="FINISH" mergeStrategy="TOTAL_SAMETYPE">
+  <method methodsig="&lt;android.app.Activity: void finish()&gt;" checkValue="not"/>
+ </operation>
+ <operation resourceCategory="android.database.sqlite.SQLiteOpenHelper" opType="REQUIRE">
+  <method methodsig="&lt;android.database.sqlite.SQLiteOpenHelper: void &lt;init&gt;(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteOpenHelper: void &lt;init&gt;(android.content.Context,java.lang.String,android.database.sqlite.SQLiteDatabase$CursorFactory,int,android.database.DatabaseErrorHandler)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteOpenHelper: void &lt;init&gt;(android.content.Context,java.lang.String,int,android.database.sqlite.SQLiteDatabase$OpenParams)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.database.sqlite.SQLiteOpenHelper" opType="RELEASE">
+  <method methodsig="&lt;android.database.sqlite.SQLiteOpenHelper: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.media.AudioManager" opType="REQUIRE">
+  <method methodsig="&lt;android.media.AudioManager: int requestAudioFocus(android.media.AudioFocusRequest)&gt;"/>
+  <method methodsig="&lt;android.media.AudioManager: int requestAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener,int,int)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.media.AudioManager" opType="RELEASE">
+  <method methodsig="&lt;android.media.AudioManager: int abandonAudioFocusRequest(android.media.AudioFocusRequest)&gt;"/>
+  <method methodsig="&lt;android.media.AudioManager: int abandonAudioFocus(android.media.AudioManager$OnAudioFocusChangeListener)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.media.MediaPlayer" opType="REQUIRE">
+  <method methodsig="&lt;android.media.MediaPlayer: android.media.MediaPlayer create(android.content.Context,android.net.Uri)&gt;"/>
+  <method methodsig="&lt;android.media.MediaPlayer: void &lt;init&gt;()&gt;"/>
+  <method methodsig="&lt;android.media.MediaPlayer: void start()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.media.MediaPlayer" opType="RELEASE">
+  <method methodsig="&lt;android.media.MediaPlayer: void release()&gt;"/>
+  <method methodsig="&lt;android.media.MediaPlayer: void stop()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.wifi.WifiManager$WifiLock" opType="REQUIRE">
+  <method methodsig="&lt;android.net.wifi.WifiManager$WifiLock: void acquire()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.wifi.WifiManager$WifiLock" opType="RELEASE">
+  <method methodsig="&lt;android.net.wifi.WifiManager$WifiLock: void release()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.Camera" opType="REQUIRE">
+  <method methodsig="&lt;android.hardware.Camera: android.hardware.Camera open()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void lock()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void startFaceDetection()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void startPreview()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.Camera" opType="RELEASE">
+  <method methodsig="&lt;android.hardware.Camera: void release()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void unlock()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void stopFaceDetection()&gt;"/>
+  <method methodsig="&lt;android.hardware.Camera: void stopPreview()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.camera2.CameraManager" opType="REQUIRE">
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void registerAvailabilityCallback(android.hardware.camera2.CameraManager$AvailabilityCallback,android.os.Handler)&gt;"/>
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void registerAvailabilityCallback(java.util.concurrent.Executor,android.hardware.camera2.CameraManager$AvailabilityCallback)&gt;"/>
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void registerTorchCallback(android.hardware.camera2.CameraManager$TorchCallback,android.os.Handler)&gt;"/>
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void registerTorchCallback(java.util.concurrent.Executor,android.hardware.camera2.CameraManager$TorchCallback)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.camera2.CameraManager" opType="RELEASE">
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void unregisterAvailabilityCallback(android.hardware.camera2.CameraManager$AvailabilityCallback)&gt;"/>
+  <method methodsig="&lt;android.hardware.camera2.CameraManager: void unregisterTorchCallback(android.hardware.camera2.CameraManager$TorchCallback)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.SensorManager" opType="REQUIRE">
+  <method methodsig="&lt;android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int,android.os.Handler)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,int)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: boolean registerListener(android.hardware.SensorEventListener,android.hardware.Sensor,int,android.os.Handler)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.hardware.SensorManager" opType="RELEASE">
+  <method methodsig="&lt;android.hardware.SensorManager: void unregisterListener(android.hardware.SensorListener)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: void unregisterListener(android.hardware.SensorEventListener)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: void unregisterListener(android.hardware.SensorListener,int)&gt;"/>
+  <method methodsig="&lt;android.hardware.SensorManager: void unregisterListener(android.hardware.SensorEventListener,android.hardware.Sensor)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.location.LocationManager" opType="REQUIRE">
+  <method methodsig="&lt;android.location.LocationManager: void requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent$Callback)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent$Callback,android.os.Handler)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage$Callback)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage$Callback,android.os.Handler)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssStatusCallback(android.location.GnssStatus$Callback)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: boolean registerGnssStatusCallback(android.location.GnssStatus$Callback,android.os.Handler)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.location.LocationManager" opType="RELEASE">
+  <method methodsig="&lt;android.location.LocationManager: void removeUpdates(android.location.LocationListener)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void removeUpdates(android.app.PendingIntent)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void unregisterGnssMeasurementsCallback(android.location.GnssMeasurementsEvent$Callback)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void unregisterGnssNavigationMessageCallback(android.location.GnssNavigationMessage$Callback)&gt;"/>
+  <method methodsig="&lt;android.location.LocationManager: void unregisterGnssStatusCallback(android.location.GnssStatus$Callback)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.PowerManager$WakeLock" opType="REQUIRE">
+  <method methodsig="&lt;android.os.PowerManager$WakeLock: void acquire()&gt;"/>
+  <method methodsig="&lt;android.os.PowerManager$WakeLock: void acquire(long)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.PowerManager$WakeLock" opType="RELEASE">
+  <method methodsig="&lt;android.os.PowerManager$WakeLock: void release()&gt;"/>
+  <method methodsig="&lt;android.os.PowerManager$WakeLock: void release(int)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.Vibrator" opType="REQUIRE">
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(android.os.VibrationEffect)&gt;"/>
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(android.os.VibrationEffect,android.media.AudioAttributes)&gt;"/>
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(long)&gt;"/>
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(long[],int)&gt;"/>
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(long,android.media.AudioAttributes)&gt;"/>
+  <method methodsig="&lt;android.os.Vibrator: void vibrate(long[],int,android.media.AudioAttributes)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.Vibrator" opType="RELEASE">
+  <method methodsig="&lt;android.os.Vibrator: void cancel()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.wifi.WifiManager" opType="REQUIRE">
+  <method methodsig="&lt;android.net.wifi.WifiManager: boolean enableNetwork(int,boolean)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.wifi.WifiManager" opType="RELEASE">
+  <method methodsig="&lt;android.net.wifi.WifiManager: boolean disableNetwork(int)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.http.AndroidHttpClient" opType="REQUIRE">
+  <method methodsig="&lt;android.net.http.AndroidHttpClient: android.net.http.AndroidHttpClient newInstance(java.lang.String)&gt;"/>
+  <method methodsig="&lt;android.net.http.AndroidHttpClient: android.net.http.AndroidHttpClient newInstance(java.lang.String,android.content.Context)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.net.http.AndroidHttpClient" opType="RELEASE">
+  <method methodsig="&lt;android.net.http.AndroidHttpClient: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="org.apache.http.impl.client.DefaultHttpClient" opType="REQUIRE">
+  <method methodsig="&lt;org.apache.http.impl.client.DefaultHttpClient: void &lt;init&gt;()&gt;"/>
+  <method methodsig="&lt;org.apache.http.impl.client.DefaultHttpClient: void &lt;init&gt;(org.apache.http.conn.ClientConnectionManager)&gt;"/>
+  <method methodsig="&lt;org.apache.http.impl.client.DefaultHttpClient: void &lt;init&gt;(org.apache.http.conn.ClientConnectionManager,org.apache.http.params.HttpParams)&gt;"/>
+  <method methodsig="&lt;com.google.android.gms.common.api.GoogleApiClient: void connect()&gt;"/>
+  <method methodsig="&lt;com.google.android.gms.internal.zzaat: void connect()&gt;"/>
+ </operation>
+ <operation resourceCategory="org.apache.http.impl.client.DefaultHttpClient" opType="RELEASE">
+  <method methodsig="&lt;org.apache.http.impl.client.DefaultHttpClient: void close()&gt;"/>
+  <method methodsig="&lt;com.google.android.gms.common.api.GoogleApiClient: void disconnect()&gt;"/>
+  <method methodsig="&lt;com.google.android.gms.internal.zzaat: void disconnect()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.database.Cursor" opType="REQUIRE">
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor query(boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor query(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor queryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor queryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,boolean,java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[])&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQuery(java.lang.String,java.lang.String[],android.os.CancellationSignal)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String)&gt;"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: android.database.Cursor rawQueryWithFactory(android.database.sqlite.SQLiteDatabase$CursorFactory,java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.database.Cursor" opType="RELEASE">
+  <method methodsig="&lt;android.database.Cursor: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.view.MotionEvent" opType="REQUIRE">
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(android.view.MotionEvent)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(long,long,int,float,float,int)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(long,long,int,float,float,float,float,int,float,float,int,int)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(long,long,int,int,int[],android.view.MotionEvent$PointerCoords[],int,float,float,int,int,int,int)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(long,long,int,int,float,float,float,float,int,float,float,int,int)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtain(long,long,int,int,android.view.MotionEvent$PointerProperties[],android.view.MotionEvent$PointerCoords[],int,int,float,float,int,int,int,int)&gt;"/>
+  <method methodsig="&lt;android.view.MotionEvent: android.view.MotionEvent obtainNoHistory(android.view.MotionEvent)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.view.MotionEvent" opType="RELEASE">
+  <method methodsig="&lt;android.view.MotionEvent: void recycle()&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.ParcelFileDescriptor" opType="REQUIRE">
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor open(java.io.File,int)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor open(java.io.File,int,android.os.Handler,android.os.ParcelFileDescriptor$OnCloseListener)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor fromFd(int)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor adoptFd(int)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor fromDatagramSocket(java.net.DatagramSocket)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor fromSocket(java.net.Socket)&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor dup(java.io.FileDescriptor)&gt;"/>
+ </operation>
+ <operation resourceCategory="android.os.ParcelFileDescriptor" opType="RELEASE">
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: void close()&gt;"/>
+  <method methodsig="&lt;android.os.ParcelFileDescriptor: void closeWithError(java.lang.String)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.io.BufferedReader" opType="REQUIRE">
+  <method methodsig="&lt;java.io.BufferedReader: void &lt;init&gt;(java.io.Reader,int)&gt;"/>
+  <method methodsig="&lt;java.io.BufferedReader: void &lt;init&gt;(java.io.Reader)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.io.BufferedReader" opType="RELEASE">
+  <method methodsig="&lt;java.io.BufferedReader: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.io.BufferedWriter" opType="REQUIRE">
+  <method methodsig="&lt;java.io.BufferedWriter: void &lt;init&gt;(java.io.Writer,int)&gt;"/>
+  <method methodsig="&lt;java.io.BufferedWriter: void &lt;init&gt;(java.io.Writer)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.io.BufferedWriter" opType="RELEASE">
+  <method methodsig="&lt;java.io.BufferedWriter: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.net.Socket" opType="REQUIRE">
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;()&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.net.Proxy)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.lang.String,int)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.net.InetAddress,int)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.lang.String,int,java.net.InetAddress,int)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.net.InetAddress,int,java.net.InetAddress,int)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.lang.String,int,boolean)&gt;"/>
+  <method methodsig="&lt;java.net.Socket: void &lt;init&gt;(java.net.InetAddress,int,boolean)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.net.Socket" opType="RELEASE">
+  <method methodsig="&lt;java.net.Socket: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.Scanner" opType="REQUIRE">
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.lang.Readable)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.io.InputStream,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.io.InputStream)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.io.File,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.nio.file.Path,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.nio.file.Path)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.nio.channels.ReadableByteChannel)&gt;"/>
+  <method methodsig="&lt;java.util.Scanner: void &lt;init&gt;(java.nio.channels.ReadableByteChannel,java.lang.String)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.Scanner" opType="RELEASE">
+  <method methodsig="&lt;java.util.Scanner: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.Formatter" opType="REQUIRE">
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;()&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.util.Locale)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.lang.Appendable)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.lang.Appendable,java.util.Locale)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.lang.String,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.lang.String,java.lang.String,java.util.Locale)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.File)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.File,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.File,java.lang.String,java.util.Locale)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.OutputStream)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.OutputStream,java.lang.String)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.OutputStream,java.lang.String,java.util.Locale)&gt;"/>
+  <method methodsig="&lt;java.util.Formatter: void &lt;init&gt;(java.io.PrintStream)&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.Formatter" opType="RELEASE">
+  <method methodsig="&lt;java.util.Formatter: void close()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.logging.FileHandler" opType="REQUIRE">
+  <method methodsig="&lt;java.util.logging.FileHandler: void &lt;init&gt;()&gt;"/>
+ </operation>
+ <operation resourceCategory="java.util.logging.FileHandler" opType="RELEASE">
+  <method methodsig="&lt;java.util.logging.FileHandler: void close()&gt;"/>
+ </operation>
+ <Pattern_2/>
+ <operation opType="SAVE">
+  <method methodsig="&lt;android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putByte(java.lang.String,byte)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putChar(java.lang.String,char)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putShort(java.lang.String,short)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putFloat(java.lang.String,float)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putCharSequence(java.lang.String,java.lang.CharSequence)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putSize(java.lang.String,android.util.Size)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putSizeF(java.lang.String,android.util.SizeF)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putParcelableArray(java.lang.String,android.os.Parcelable[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putParcelableArrayList(java.lang.String,java.util.ArrayList)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putSparseParcelableArray(java.lang.String,android.util.SparseArray)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putIntegerArrayList(java.lang.String,java.util.ArrayList)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putStringArrayList(java.lang.String,java.util.ArrayList)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putCharSequenceArrayList(java.lang.String,java.util.ArrayList)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putSerializable(java.lang.String,java.io.Serializable)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putByteArray(java.lang.String,byte[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putShortArray(java.lang.String,short[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putCharArray(java.lang.String,char[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putFloatArray(java.lang.String,float[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putCharSequenceArray(java.lang.String,java.lang.CharSequence[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putInt(java.lang.String,int)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putString(java.lang.String,java.lang.String)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putIntArray(java.lang.String,int[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putStringArray(java.lang.String,java.lang.String[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putLong(java.lang.String,long)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putBoolean(java.lang.String,boolean)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putDouble(java.lang.String,double)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.Bundle: void putBinder(java.lang.String,android.os.IBinder)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putByte(java.lang.String,byte)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putChar(java.lang.String,char)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putShort(java.lang.String,short)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putFloat(java.lang.String,float)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putByteArray(java.lang.String,byte[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putShortArray(java.lang.String,short[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putCharArray(java.lang.String,char[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putFloatArray(java.lang.String,float[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putCharSequenceArray(java.lang.String,java.lang.CharSequence[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putBundle(java.lang.String,android.os.Bundle)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putInt(java.lang.String,int)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putString(java.lang.String,java.lang.String)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putIntArray(java.lang.String,int[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putStringArray(java.lang.String,java.lang.String[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putLong(java.lang.String,long)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putBoolean(java.lang.String,boolean)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.os.BaseBundle: void putDouble(java.lang.String,double)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)&gt;" checkValue="!b,p2"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: long insertOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)&gt;" checkValue="!b,p2"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: long insertWithOnConflict(java.lang.String,java.lang.String,android.content.ContentValues,int)&gt;" checkValue="!b,p2"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: long replace(java.lang.String,java.lang.String,android.content.ContentValues)&gt;" checkValue="!b,p2"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: long replaceOrThrow(java.lang.String,java.lang.String,android.content.ContentValues)&gt;" checkValue="!b,p2"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.database.sqlite.SQLiteDatabase: int updateWithOnConflict(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[],int)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putBoolean(java.lang.String,boolean)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putFloat(java.lang.String,float)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putInt(java.lang.String,int)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putLong(java.lang.String,long)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putString(java.lang.String,java.lang.String)&gt;" checkValue="!b,p1"/>
+  <method methodsig="&lt;android.content.SharedPreferences.Editor: android.content.SharedPreferences.Editor putStringSet(java.lang.String,java.util.Set)&gt;" checkValue="!b,p1"/>
+ </operation>
+ <Pattern_3/>
+ <operation opType="RELEASE" resourceCategory="io.reactivex.disposables.CompositeDisposable">
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: void dispose()&gt;"/>
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: void dispose(io.reactivex.internal.util.OpenHashSet)&gt;"/>
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: void clear()&gt;"/>
+ </operation>
+ <operation opType="REQUIRE" resourceCategory="io.reactivex.disposables.CompositeDisposable">
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: void &lt;init&gt;()&gt;"/>
+ </operation>
+ <operation opType="ADD" resourceCategory="io.reactivex.disposables.CompositeDisposable">
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: boolean add(io.reactivex.disposables.Disposable)&gt;"/>
+ </operation>
+ <operation opType="DELETE" resourceCategory="io.reactivex.disposables.CompositeDisposable">
+  <method methodsig="&lt;io.reactivex.disposables.CompositeDisposable: boolean delete(io.reactivex.disposables.Disposable)&gt;"/>
+ </operation>
+ <operation opType="RELEASE" resourceCategory="retrofit2">
+  <method methodsig="&lt;retrofit2.Call: void cancel()&gt;"/>
+ </operation>
+ <operation opType="ADD" resourceCategory="retrofit2">
+  <method methodsig="&lt;retrofit2.Call: void enqueue(retrofit2.Callback)&gt;"/>
+ </operation>
+ <operation opType="ADD" resourceCategory="android.content.SharedPreferences">
+  <method methodsig="&lt;android.content.SharedPreferences: void registerOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)&gt;" checkValue="!b,p0"/>
+ </operation>
+ <operation opType="DELETE" resourceCategory="android.content.SharedPreferences">
+  <method methodsig="&lt;android.content.SharedPreferences: void unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences$OnSharedPreferenceChangeListener)&gt;" checkValue="!b,p0"/>
+ </operation>
+ <operation opType="REQUIRE" resourceCategory="com.google.android.exoplayer2">
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.ExoPlayer newInstance(com.google.android.exoplayer2.Renderer[],com.google.android.exoplayer2.trackselection.TrackSelector)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.ExoPlayer newInstance(com.google.android.exoplayer2.Renderer[],com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.ExoPlayer newInstance(com.google.android.exoplayer2.Renderer[],com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.ExoPlayer newInstance(com.google.android.exoplayer2.Renderer[],com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.upstream.BandwidthMeter,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,com.google.android.exoplayer2.analytics.AnalyticsCollector$Factory)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,com.google.android.exoplayer2.analytics.AnalyticsCollector$Factory,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,com.google.android.exoplayer2.upstream.BandwidthMeter)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,com.google.android.exoplayer2.upstream.BandwidthMeter,com.google.android.exoplayer2.analytics.AnalyticsCollector$Factory,android.os.Looper)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.drm.DrmSessionManager)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,int)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(android.content.Context,com.google.android.exoplayer2.trackselection.TrackSelector,com.google.android.exoplayer2.LoadControl,com.google.android.exoplayer2.drm.DrmSessionManager,int,long)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.ExoPlayerFactory: com.google.android.exoplayer2.SimpleExoPlayer newSimpleInstance(com.google.android.exoplayer2.RenderersFactory,com.google.android.exoplayer2.trackselection.TrackSelector)&gt;"/>
+ </operation>
+ <operation opType="ADD" resourceCategory="com.google.android.exoplayer2">
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addListener(com.google.android.exoplayer2.Player$EventListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addVideoDebugListener(com.google.android.exoplayer2.video.VideoRendererEventListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addVideoListener(com.google.android.exoplayer2.video.VideoListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addAnalyticsListener(com.google.android.exoplayer2.analytics.AnalyticsListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addAudioDebugListener(com.google.android.exoplayer2.audio.AudioRendererEventListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void addAudioListener(com.google.android.exoplayer2.audio.AudioListener)&gt;"/>
+ </operation>
+ <operation opType="DELETE" resourceCategory="com.google.android.exoplayer2">
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void clearVideoListener(com.google.android.exoplayer2.SimpleExoPlayer$VideoListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeAnalyticsListener(com.google.android.exoplayer2.analytics.AnalyticsListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeAudioDebugListener(com.google.android.exoplayer2.audio.AudioRendererEventListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeAudioListener(com.google.android.exoplayer2.audio.AudioListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeListener(com.google.android.exoplayer2.Player$EventListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeVideoListener(com.google.android.exoplayer2.video.VideoListener)&gt;"/>
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void removeVideoDebugListener(com.google.android.exoplayer2.video.VideoRendererEventListener)&gt;"/>
+ </operation>
+ <operation opType="RELEASE" resourceCategory="com.google.android.exoplayer2">
+  <method methodsig="&lt;com.google.android.exoplayer2.SimpleExoPlayer: void release()&gt;"/>
+ </operation>
+</ResourceOperations>

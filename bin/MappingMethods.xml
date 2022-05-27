@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingMethods>
+ <method methodsig="&lt;cgeo.geocaching.maps.mapsforge.v6.layers.HistoryLayer: java.util.ArrayList getHistory()&gt;" checkValue="b" taintValue="l, op"/>
+ <method checkValue="b" methodsig="&lt;net.steppschuh.datalogger.data.request.DataRequest: void setEndTimestamp(long)&gt;" taintValue="l, op"/>
+</MappingMethods>
