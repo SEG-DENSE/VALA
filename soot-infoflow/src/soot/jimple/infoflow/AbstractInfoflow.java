@@ -123,7 +123,7 @@ public abstract class AbstractInfoflow implements IInfoflow {
 	 */
 	private String appendClasspath(String appPath, String libPath) {
 		String s = (appPath != null && !appPath.isEmpty()) ? appPath : "";
-
+        // This is a comment
 		if (libPath != null && !libPath.isEmpty()) {
 			if (!s.isEmpty())
 				s += File.pathSeparator;
