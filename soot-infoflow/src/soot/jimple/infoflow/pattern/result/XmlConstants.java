@@ -1,5 +1,6 @@
 package soot.jimple.infoflow.pattern.result;
 
+// Define XML Constants
 public class XmlConstants {
     public class Tags {
 
