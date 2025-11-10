@@ -1,5 +1,6 @@
 /**
    $Id: BasicTestCase.java,v 1.5 2006/04/21 17:14:24 livshits Exp $
+   This is a comment
 */
 package securibench.micro;
 
