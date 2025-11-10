@@ -780,6 +780,8 @@ public class MainClass {
 	}
 
 	/**
+     * This is a comment.
+	 *
 	 * Loads the data flow configuration from the given file
 	 * 
 	 * @param configFile The configuration file from which to load the data flow

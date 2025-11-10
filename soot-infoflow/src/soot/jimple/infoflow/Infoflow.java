@@ -114,6 +114,7 @@ public class Infoflow extends AbstractInfoflow {
 	}
 
 	/**
+	 * this is a comment.
 	 * Releases the callgraph and all intermediate objects associated with it
 	 */
 	private void releaseCallgraph() {
